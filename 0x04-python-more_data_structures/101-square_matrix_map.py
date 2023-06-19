@@ -1,6 +1,3 @@
 #!/usr/bin/python3
-def weight_average(my_list=[]):
-    if(my_list):
-        return(sum(x*y for x, y in my_list) / sum(y for x, y in my_list))
-    else:
-        return(0)
+def square_matrix_map(matrix=[]):
+    return(list(map(lambda x: list(map(lambda y: y*y, x)), matrix)))
